@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    /* background-color: var(--color4); */
+    /* width: 900px; */
+}
+:root{
+    --color1:hsl(14, 86%, 42%);
+    --color2:hsl(159, 69%, 38%);
+    --color3:hsl(20, 50%, 98%);
+    --color4:hsl(13, 31%, 94%);
+    --color5:hsl(14, 25%, 72%);
+    --color6:hsl(7, 20%, 60%);
+    --color7:hsl(12, 20%, 44%);
+    --color8:hsl(14, 65%, 9%);
+}
+@font-face{
+    font-family: Red-Hat-Text;
+    src: url(assets/fonts/RedHatText-VariableFont_wght.ttf);
+}
+body{
+    background-color: var(--color3);
+    padding: 35px;
+    width: 900px;
+}
+.main{
+    /* display: flex;
+    flex-direction: column;
+    align-items: flex-start; */
+}
+h1{
+    font-family: Red-Hat-Text;
+    src: url(assets/fonts/static/RedHatText-SemiBold.ttf);
+    font-weight: 650;
+    font-size: 40px;
+    color: var(--color8);
+    margin-left: 55px;
+    margin-bottom: -15px;
+    margin-top: 43px;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0 20px 0 ;
+}
+.boxs{
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.boxs .box{
+    width: 30%;
+    border: none;
+    outline: none;
+    flex-wrap: wrap;
+    margin-bottom: 45px;
+
+}
+.image-container{
+    position: relative;
+    display: inline-block;
+}
+.image{
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+.btn{
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 5px 10px;
+    background-color: var(--color3);
+    width: 145px;
+    height: 41px;
+    border: 1px solid var(--color6);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
+}
+.btn a{
+    font-size: 12px;
+    text-decoration: none;
+    font-weight: 520;
+    font-family: Red-Hat-Text;
+    src: url(assets/fonts/static/RedHatText-Bold.ttf);
+    color: var(--color8);
+}
+.text{
+    margin-top: 25px;
+    line-height: 1.5;
+}
+h4{
+    color: var(--color6);
+    font-family: Red-Hat-Text;
+    src: url(assets/fonts/RedHatText-Italic-VariableFont_wght.ttf);
+    font-weight: 70;
+    font-size: 13px;
+
+}
+h3{
+    color: var(--color8);
+    font-family: Red-Hat-Text;
+    src: url(assets/fonts/static/RedHatText-SemiBold.ttf);
+    font-weight: 500;
+    font-size: 15px;
+}
+p{
+    color: var(--color1);
+    font-family: Red-Hat-Text;
+    src: url(assets/fonts/RedHatText-VariableFont_wght.ttf);
+    font-weight: 450;
+}
+/* .box2{
+    padding: 20px;
+} */
