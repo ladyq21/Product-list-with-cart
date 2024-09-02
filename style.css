@@ -3,8 +3,6 @@
     padding: 0;
     box-sizing: border-box;
     font-size: 16px;
-    /* background-color: var(--color4); */
-    /* width: 900px; */
 }
 :root{
     --color1:hsl(14, 86%, 42%);
@@ -21,12 +19,15 @@
     src: url(assets/fonts/RedHatText-VariableFont_wght.ttf);
 }
 body{
-    background-color: var(--color3);
-    /* padding: 35px; */
+    background-color: black;
 }
 .main{
-    max-width: 900px;
-    
+    background-color: var(--color3);
+    max-width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    gap: 2%;
+    padding: 80px 70px 80px  98px;
 }
 h1{
     font-family: Red-Hat-Text;
@@ -34,20 +35,20 @@ h1{
     font-weight: 650;
     font-size: 40px;
     color: var(--color8);
-    margin-left: 55px;
-    margin-bottom: -15px;
-    margin-top: 43px;
 }
 .container{
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-items: center;
-    padding: 40px 0 20px 0 ;
+    gap: 25px;
+    width: 70%;
 }
 .boxs{
-    width: 90%;
+    width: 100%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    gap: 10px;
+    column-gap: 20px;
     align-items: center;
     flex-wrap: wrap;
 }
@@ -56,12 +57,9 @@ h1{
     border: none;
     outline: none;
     flex-wrap: wrap;
-    margin-bottom: 45px;
     position: relative;
 }
 .image-container{
-    /* position: relative;
-    display: inline-block; */
     width: 100%;
 }
 .image{
@@ -72,13 +70,13 @@ h1{
 }
 .btn{
     position: absolute;
-    bottom: 25%;
+    bottom: 23%;
     left: 50%;
     transform: translateX(-50%);
     padding: 5px 10px;
     background-color: var(--color3);
     width: 145px;
-    height: 41px;
+    height: 40px;
     border: 1px solid var(--color6);
     border-radius: 20px;
     display: flex;
@@ -100,7 +98,7 @@ h1{
     line-height: 1.5;
 }
 h4{
-    color: var(--color6);
+    color: var(--color7);
     font-family: Red-Hat-Text;
     src: url(assets/fonts/RedHatText-Italic-VariableFont_wght.ttf);
     font-weight: 70;
@@ -119,26 +117,95 @@ p{
     font-family: Red-Hat-Text;
     src: url(assets/fonts/RedHatText-VariableFont_wght.ttf);
     font-weight: 450;
+    font-size: 14px;
 }
-/* .box2{
+.box2{
+    width: 35%;
+    background-color: white;
+    border-radius: 10px;
+    height: 40%;
+    padding: 25px;
+}
+.box2 img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 55%;
+    height: auto;
     padding: 20px;
-} */
+}
+h2{
+    color: var(--color1);
+    font-family: Red-Hat-Text;
+    src: url(assets/fonts/static/RedHatText-Bold.ttf);
+    font-weight: 650;
+    font-size: 23px;
+}
+.box2 p{
+    color: var(--color6);
+    text-align: center;
+    font-family: Red-Hat-Text;
+    src: url(assets/fonts/RedHatText-Italic-VariableFont_wght.ttf);
+    font-weight: 400;
+    font-size: 12px;
+}
+
+@media screen and (max-width:1024px) {
+    .boxs .box{
+        width: 30%;
+    }
+    .btn{
+        left: calc(100% - 145px) / 2;
+        bottom: 36%;
+    }
+}
 
 @media screen and (max-width:768px) {
+    .main{
+        display: flex;
+        flex-direction: column;
+    }
     .boxs .box{
         width: 45%;
     }
     .btn{
         left: calc(100% - 145px) / 2;
-        bottom: 18%;
+        bottom: 25%;
     }
-}
+}    
 @media screen and (max-width:430px) {
+    .main{
+        display: flex;
+        flex-direction: column;
+    }
+    .container{
+        gap: 20px;
+        flex-wrap: wrap;
+        position: relative;
+        align-items: center;
+    }
+
     .boxs .box{
         width: 100%;
+        display: flex;
+        flex-direction: row;
     }
+
     .btn{
         left: calc(100% - 145px) / 2;
-        bottom: 9%;
+        bottom: 30%;
+        width: 145px;
+        height: 35px;
+    }
+    .box2{
+        width: 100%;
+        background-color: white;
+        border-radius: 10px;
+        border: none;
+        outline: none;
+        flex-wrap: wrap;
+        position: relative;
+        height: 38vh;
+        align-items: center;
     }
 }
