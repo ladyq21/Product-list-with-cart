@@ -102,7 +102,7 @@ h4{
     font-family: Red-Hat-Text;
     src: url(assets/fonts/RedHatText-Italic-VariableFont_wght.ttf);
     font-weight: 70;
-    font-size: 13px;
+    font-size: 14px;
 
 }
 h3{
@@ -156,7 +156,22 @@ h2{
     }
     .btn{
         left: calc(100% - 145px) / 2;
-        bottom: 36%;
+        bottom: 28%;
+    }
+    h3{
+        color: var(--color8);
+        font-family: Red-Hat-Text;
+        src: url(assets/fonts/static/RedHatText-SemiBold.ttf);
+        font-weight: 450;
+        font-size: 12px;
+    }
+    h4{
+        color: var(--color7);
+        font-family: Red-Hat-Text;
+        src: url(assets/fonts/RedHatText-Italic-VariableFont_wght.ttf);
+        font-weight: 70;
+        font-size: 14px;
+    
     }
 }
 
@@ -164,36 +179,64 @@ h2{
     .main{
         display: flex;
         flex-direction: column;
-    }
-    .boxs .box{
-        width: 45%;
-    }
-    .btn{
-        left: calc(100% - 145px) / 2;
-        bottom: 25%;
-    }
-}    
-@media screen and (max-width:430px) {
-    .main{
-        display: flex;
-        flex-direction: column;
+        padding: 20px;
+        width: 768px;
+        margin: 0 auto;
     }
     .container{
         gap: 20px;
         flex-wrap: wrap;
         position: relative;
         align-items: center;
+        width: 100%;
+        margin: 0 auto;
+    }
+    .boxs .box{
+        width: 45%;
+    }
+    .btn{
+        left: calc(100% - 145px) / 2;
+        bottom: 18%;
+    }
+    .box2{
+        width: 45%;
+        /* margin: 0 auto; */
+        background-color: white;
+        border-radius: 10px;
+        border: none;
+        outline: none;
+        flex-wrap: wrap;
+        position: relative;
+        align-items: center;
+    }
+}    
+@media screen and (max-width:430px) {
+    .main{
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        width: 430px;
+        margin: 0 auto;
+    }
+    .container{
+        gap: 20px;
+        flex-wrap: wrap;
+        position: relative;
+        align-items: center;
+        width: 100%;
+        margin: 0 auto;
     }
 
     .boxs .box{
         width: 100%;
         display: flex;
         flex-direction: row;
+        padding-bottom: 20px;
     }
 
     .btn{
         left: calc(100% - 145px) / 2;
-        bottom: 30%;
+        bottom: 18%;
         width: 145px;
         height: 35px;
     }
@@ -213,23 +256,71 @@ h2{
     .main{
         display: flex;
         flex-direction: column;
+        padding: 20px;
+        width: 375px;
+        margin: 0 auto;
     }
     .container{
         gap: 20px;
         flex-wrap: wrap;
         position: relative;
         align-items: center;
+        width: 100%;
+        margin: 0 auto;
     }
 
     .boxs .box{
         width: 100%;
         display: flex;
         flex-direction: row;
+        padding-bottom: 20px;
     }
 
     .btn{
         left: calc(100% - 145px) / 2;
-        bottom: 35%;
+        bottom: 20%;
+        width: 145px;
+        height: 35px;
+    }
+    .box2{
+        width: 100%;
+        background-color: white;
+        border-radius: 10px;
+        border: none;
+        outline: none;
+        flex-wrap: wrap;
+        position: relative;
+        height: 38vh;
+        align-items: center;
+    }
+}
+@media screen and (max-width:320px) {
+    .main{
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        width: 320px;
+        margin: 0 auto;
+    }
+    .container{
+        gap: 20px;
+        flex-wrap: wrap;
+        position: relative;
+        align-items: center;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .boxs .box{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        padding-bottom: 20px;
+    }
+
+    .btn{
+        left: calc(100% - 145px) / 2;
+        bottom: 25%;
         width: 145px;
         height: 35px;
     }
